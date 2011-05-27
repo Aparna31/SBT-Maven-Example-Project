@@ -13,7 +13,7 @@ import com.gravity.insights.crawler.Crawl
 */
 object Plush {
 
-  def testme(args: Array[String]) {
+  def main(args: Array[String]) {
 
     println("This is a sample multi module set up using maven and sbt")
 

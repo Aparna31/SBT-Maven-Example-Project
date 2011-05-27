@@ -5,3 +5,33 @@ It also demonstrates the use of submodules and dependencies along with
 how to run different main methods from within your project
 
 If you have any suggestions or bugs hit me up at twitter @jimplush
+
+This codebase was powered soley by VIM
+
+
+To Test:
+
+# cd into your code directory
+git clone git@github.com:jiminoc/SBT-Maven-Example-Project.git
+
+cd SBT-Maven-Example-Project
+
+sbt
+
+# now you're in the sbt console:
+run    // This will run the main class that has some dependencies
+
+run-scraper   // runs the main class from a submodule
+
+
+# you can also do other commands like:
+reload  // reload any changes you make to the project file
+
+update // update any pom dependencies
+
+compile   // compile all the files
+
+
+
+
+

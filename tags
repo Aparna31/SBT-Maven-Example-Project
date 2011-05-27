@@ -45,6 +45,7 @@ jimtest	project/build/PlushProject.scala	/^  lazy val jimtest = runTask(Some("co
 main	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^  def main(args: Array[String]) {$/;"	m
 main	insights/crawler/src/main/java/com/gravity/insights/crawler/App.java	/^    public static void main( String[] args )$/;"	m	class:App
 main	insights/processor/src/main/java/com/gravity/insights/processor/App.java	/^    public static void main( String[] args )$/;"	m	class:App
+main	src/main/scala/com/gravity/plush/Plush.scala	/^  def main(args: Array[String]) {$/;"	m
 mavenLocal	project/build/PlushProject.scala	/^  val mavenLocal = "Local Maven Repository" at "file:\/\/" + (Path.userHome \/ ".m2" \/ "repository").absolutePath;$/;"	V
 name	insights/processor/src/main/scala/com/gravity/insights/processor/Processor.scala	/^  val name: String = "Processor dude"$/;"	V
 org.apache.commons.io.FileUtils	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^import org.apache.commons.io.FileUtils$/;"	i
@@ -64,5 +65,4 @@ testApp	beagle/scraper/src/test/java/com/gravity/beagle/AppTest.java	/^    publi
 testApp	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
 testApp	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
 testApp	src/test/java/com/gravity/plush/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
-testme	src/main/scala/com/gravity/plush/Plush.scala	/^  def testme(args: Array[String]) {$/;"	m
 url	insights/crawler/src/main/scala/com/gravity/insights/crawler/Crawl.scala	/^  var url: String = null;$/;"	v
