@@ -12,12 +12,9 @@ AppTest	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java
 AppTest	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java	/^public class AppTest $/;"	c
 AppTest	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^    public AppTest( String testName )$/;"	m	class:AppTest
 AppTest	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^public class AppTest $/;"	c
-AppTest	src/test/java/com/gravity/plush/AppTest.java	/^    public AppTest( String testName )$/;"	m	class:AppTest
-AppTest	src/test/java/com/gravity/plush/AppTest.java	/^public class AppTest $/;"	c
 BeagleProject	project/build/PlushProject.scala	/^  class BeagleProject(info: ProjectInfo) extends ParentProject(info)$/;"	c
 Crawl	insights/crawler/src/main/scala/com/gravity/insights/crawler/Crawl.scala	/^class Crawl {$/;"	c
 InsightsProject	project/build/PlushProject.scala	/^  class InsightsProject(info: ProjectInfo) extends ParentProject(info)$/;"	c
-Plush	src/main/scala/com/gravity/plush/Plush.scala	/^object Plush {$/;"	o
 PlushProject	project/build/PlushProject.scala	/^class PlushProject(info: ProjectInfo) extends DefaultProject(info) {$/;"	c
 Processor	insights/processor/src/main/scala/com/gravity/insights/processor/Processor.scala	/^class Processor {$/;"	c
 ScrapingRunner	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^object ScrapingRunner {$/;"	o
@@ -28,30 +25,22 @@ com.gravity.insights.crawler	insights/crawler/src/main/java/com/gravity/insights
 com.gravity.insights.crawler	insights/crawler/src/main/scala/com/gravity/insights/crawler/Crawl.scala	/^package com.gravity.insights.crawler$/;"	p
 com.gravity.insights.crawler	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java	/^package com.gravity.insights.crawler;$/;"	p
 com.gravity.insights.crawler.Crawl	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^import com.gravity.insights.crawler.Crawl$/;"	i
-com.gravity.insights.crawler.Crawl	src/main/scala/com/gravity/plush/Plush.scala	/^import com.gravity.insights.crawler.Crawl$/;"	i
 com.gravity.insights.processor	insights/processor/src/main/java/com/gravity/insights/processor/App.java	/^package com.gravity.insights.processor;$/;"	p
 com.gravity.insights.processor	insights/processor/src/main/scala/com/gravity/insights/processor/Processor.scala	/^package com.gravity.insights.processor$/;"	p
 com.gravity.insights.processor	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^package com.gravity.insights.processor;$/;"	p
-com.gravity.plush	src/main/scala/com/gravity/plush/Plush.scala	/^package com.gravity.plush$/;"	p
-com.gravity.plush	src/test/java/com/gravity/plush/AppTest.java	/^package com.gravity.plush;$/;"	p
 crawler	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^    val crawler = new Crawl()$/;"	V
 crawler	project/build/PlushProject.scala	/^    lazy val crawler = project("crawler", "Web Crawler")$/;"	V
-crawler	src/main/scala/com/gravity/plush/Plush.scala	/^    val crawler = new Crawl()$/;"	V
-dt	src/main/scala/com/gravity/plush/Plush.scala	/^    val dt = new DateTime();$/;"	V
+dt	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^    val dt = new DateTime();$/;"	V
 insights	project/build/PlushProject.scala	/^  lazy val insights = project("insights", "Insights Analytics", new InsightsProject(_));$/;"	V
 java.io.File	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^import java.io.File$/;"	i
-java.io.File	src/main/scala/com/gravity/plush/Plush.scala	/^import java.io.File$/;"	i
 jimtest	project/build/PlushProject.scala	/^  lazy val jimtest = runTask(Some("com.gravity.beagle.scraper.ScrapingRunner"), runClasspath).dependsOn(compile) describedAs "Runs the demo."$/;"	V
 main	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^  def main(args: Array[String]) {$/;"	m
 main	insights/crawler/src/main/java/com/gravity/insights/crawler/App.java	/^    public static void main( String[] args )$/;"	m	class:App
 main	insights/processor/src/main/java/com/gravity/insights/processor/App.java	/^    public static void main( String[] args )$/;"	m	class:App
-main	src/main/scala/com/gravity/plush/Plush.scala	/^  def main(args: Array[String]) {$/;"	m
 mavenLocal	project/build/PlushProject.scala	/^  val mavenLocal = "Local Maven Repository" at "file:\/\/" + (Path.userHome \/ ".m2" \/ "repository").absolutePath;$/;"	V
 name	insights/processor/src/main/scala/com/gravity/insights/processor/Processor.scala	/^  val name: String = "Processor dude"$/;"	V
 org.apache.commons.io.FileUtils	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^import org.apache.commons.io.FileUtils$/;"	i
-org.apache.commons.io.FileUtils	src/main/scala/com/gravity/plush/Plush.scala	/^import org.apache.commons.io.FileUtils$/;"	i
 org.joda.time.DateTime	beagle/scraper/src/main/scala/com/gravity/beagle/scraper/ScrapingRunner.scala	/^import org.joda.time.DateTime$/;"	i
-org.joda.time.DateTime	src/main/scala/com/gravity/plush/Plush.scala	/^import org.joda.time.DateTime$/;"	i
 plush	project/build/PlushProject.scala	/^  lazy val plush = project("plush", "Jim Plush Project" );$/;"	V
 processor	project/build/PlushProject.scala	/^    lazy val processor = project("processor", "Processes Stuff")$/;"	V
 runScraper	project/build/PlushProject.scala	/^  lazy val runScraper = task { args =>$/;"	V
@@ -60,9 +49,7 @@ scraper	project/build/PlushProject.scala	/^    lazy val scraper = project("scrap
 suite	beagle/scraper/src/test/java/com/gravity/beagle/AppTest.java	/^    public static Test suite()$/;"	m	class:AppTest
 suite	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java	/^    public static Test suite()$/;"	m	class:AppTest
 suite	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^    public static Test suite()$/;"	m	class:AppTest
-suite	src/test/java/com/gravity/plush/AppTest.java	/^    public static Test suite()$/;"	m	class:AppTest
 testApp	beagle/scraper/src/test/java/com/gravity/beagle/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
 testApp	insights/crawler/src/test/java/com/gravity/insights/crawler/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
 testApp	insights/processor/src/test/java/com/gravity/insights/processor/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
-testApp	src/test/java/com/gravity/plush/AppTest.java	/^    public void testApp()$/;"	m	class:AppTest
 url	insights/crawler/src/main/scala/com/gravity/insights/crawler/Crawl.scala	/^  var url: String = null;$/;"	v

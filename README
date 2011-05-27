@@ -32,6 +32,12 @@ run    // This will run the main class that has some dependencies
 run-scraper   // runs the main class from a submodule
 
 
+# If you want to test via Maven you can do 
+
+mvn clean install
+
+# Now you can run the same class via Maven
+mvn -pl beagle/scraper exec:java -Dexec.mainClass=com.gravity.beagle.scraper.ScrapingRunner -e
 
 
 

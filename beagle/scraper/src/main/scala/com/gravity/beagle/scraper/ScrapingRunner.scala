@@ -10,12 +10,18 @@ object ScrapingRunner {
   
   def main(args: Array[String]) {
     
-    println("starting up Scraping Runner ")
+
+    println("This is a sample multi module set up using maven and sbt")
+
+    // example of using a dependency on JodaTime and using it
+    val dt = new DateTime();
+    println("Datetime is: %s".format(dt.toString()));
+
+    // example of using a dependency from our own project structure in insights/crawler
     val crawler = new Crawl()
-    crawler.url = "http://sitethathasdata"
-    
-    println("about to scrape some data")
+    crawler.url = "http://techcrunch.com"
     crawler.crawl()
+
 
   }
 
