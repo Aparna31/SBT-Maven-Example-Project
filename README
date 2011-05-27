@@ -1,0 +1,7 @@
+This is a sample project structure using Maven and SBT together
+for working with Scala. 
+
+It also demonstrates the use of submodules and dependencies along with 
+how to run different main methods from within your project
+
+If you have any suggestions or bugs hit me up at twitter @jimplush
