@@ -19,10 +19,6 @@ cd SBT-Maven-Example-Project
 sbt
 
 # now you're in the sbt console:
-run    // This will run the main class that has some dependencies
-
-run-scraper   // runs the main class from a submodule
-
 
 # you can also do other commands like:
 reload  // reload any changes you make to the project file
@@ -30,6 +26,12 @@ reload  // reload any changes you make to the project file
 update // update any pom dependencies
 
 compile   // compile all the files
+
+run    // This will run the main class that has some dependencies
+
+run-scraper   // runs the main class from a submodule
+
+
 
 
 
