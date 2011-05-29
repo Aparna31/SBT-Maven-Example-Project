@@ -16,10 +16,15 @@ git clone git@github.com:jiminoc/SBT-Maven-Example-Project.git
 
 cd SBT-Maven-Example-Project
 
+
+# We need to do a maven clean install to get the jars in our m2 repository 
+
+mvn clean install
+
+#now you can fire up SBT
 sbt
 
 # now you're in the sbt console:
-
 # you can also do other commands like:
 reload  // reload any changes you make to the project file
 
@@ -32,9 +37,6 @@ run    // This will run the main class that has some dependencies
 run-scraper   // runs the main class from a submodule
 
 
-# If you want to test via Maven you can do 
-
-mvn clean install
 
 # Now you can run the same class via Maven
 mvn -pl beagle/scraper exec:java -Dexec.mainClass=com.gravity.beagle.scraper.ScrapingRunner -e
