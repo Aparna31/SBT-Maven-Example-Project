@@ -32,8 +32,6 @@ update // update any pom dependencies
 
 compile   // compile all the files
 
-run    // This will run the main class that has some dependencies
-
 run-scraper   // runs the main class from a submodule
 
 
