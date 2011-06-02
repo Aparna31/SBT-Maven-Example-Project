@@ -12,7 +12,9 @@ class PlushProject(info: ProjectInfo) extends DefaultProject(info) {
 
   lazy val beagle = project("beagle", "Beagle Scraper", new BeagleProject(_));
 
-  lazy val plush = project("plush", "Jim Plush Project" );
+  lazy val plush = project("plush", "Jim Plush Project" )
+
+  lazy val utilities = project("utilities", "utilities", new Utilities(_))
   
   lazy val jimtest = runTask(Some("com.gravity.beagle.scraper.ScrapingRunner"), runClasspath).dependsOn(compile) describedAs "Runs the demo."
     
@@ -36,7 +38,13 @@ class PlushProject(info: ProjectInfo) extends DefaultProject(info) {
 
   class BeagleProject(info: ProjectInfo) extends ParentProject(info)
   {
-    lazy val scraper = project("scraper", "Data Scraper", insights)
+    lazy val scraper = project("scraper", "Data Scraper", utilities )
+
+
+  }
+
+  class Utilities(info: ProjectInfo) extends DefaultProject(info)
+  {
 
 
   }

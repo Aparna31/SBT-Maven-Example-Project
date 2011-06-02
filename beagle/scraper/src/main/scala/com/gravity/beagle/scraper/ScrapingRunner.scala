@@ -4,6 +4,7 @@ import org.joda.time.DateTime
 import java.io.File
 import org.apache.commons.io.FileUtils
 import com.gravity.insights.crawler.Crawl
+import com.gravity.utilities.UtilTest
 
 
 object ScrapingRunner {
@@ -17,9 +18,10 @@ object ScrapingRunner {
     val dt = new DateTime();
     println("Datetime is: %s".format(dt.toString()));
 
+
     // example of using a dependency from our own project structure in insights/crawler
     val crawler = new Crawl()
-    crawler.url = "http://techcrunch.com"
+    crawler.url = UtilTest.parseURL("http://techcrunch.com")
     crawler.crawl()
 
 

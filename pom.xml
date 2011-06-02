@@ -108,5 +108,6 @@
   <modules>
     <module>insights</module>
     <module>beagle</module>
+    <module>utilities</module>
   </modules>
 </project>
